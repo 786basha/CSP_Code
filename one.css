@@ -70,7 +70,7 @@
 
 .p{
     width: 100vw;
-    height: max-content;
+    height: 100vh;
     background-color: lightgrey;
 }
 nav{
@@ -89,7 +89,7 @@ nav{
 
 .box{
     width: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
@@ -97,7 +97,8 @@ nav{
 
 .lef, .rit{
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 480px;
     height: 450px;
 }
+
