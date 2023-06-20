@@ -1,4 +1,5 @@
 
+
 /* 
 * {
 	margin: 0;
@@ -120,7 +121,7 @@ t
     align-items: center;
     padding: 1rem;
  }
-/*  
+
  nav ul {
     display: flex;
     list-style: none;
@@ -133,14 +134,15 @@ t
  nav a {
     color: #fff;
     text-decoration: none;
- } */
+ } 
  
  main {
-    max-width: 800px;
+    max-width: 100vw;
     margin: 2rem auto;
     padding: 0 1rem;
  }
  
+
  section {
     margin-bottom: 2rem;
  }
@@ -165,28 +167,26 @@ t
  /* Media Queries */
  @media (max-width: 768px) {
     nav ul {
-       flex-direction: column;
+       flex-direction: row;
        align-items: center;
     }
- 
+    /* #service , #about{
+        width: fit-content;
+    } */
     nav li {
        margin: 1rem 0;
     }
+    #hero{
+
+        height: max-content;
+        background-image: url('/img/bg_mob_1.jpeg');
+    }
+    #hero h1{
+        color: #fff7f7;
+        text-shadow: 2px 3px 5px rgb(15, 15, 15);
+    }
  }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -231,8 +231,8 @@ nav a:hover {
 }
 
 .hero {
-	background-image: url('images/background.jpg');
-	background-size: cover;
+	background-image: url('/img/bg_1.png');
+	background-size: 100% 100%;
 	background-position: center;
 	text-align: center;
 	color: #fff;
@@ -264,6 +264,11 @@ button:hover {
 	color: #333;
 }
 
+#service , #about{
+    width: 80vw;
+    margin: auto;
+}
+
 .services {
 	padding: 50px 0;
 	background-color: #f2f2f2;
@@ -279,12 +284,12 @@ button:hover {
 	margin: 40px;
 }
 
-.service img {
+/* .service img {
 	width: 100%;
 	max-width: 200px;
 	height: auto;
 	margin-bottom: 20px;
-}
+} */
 
 .service h3 {
 	font-size: 24px;
@@ -318,4 +323,64 @@ footer {
 	text-align: center;
 }
 
+/* ================== */
+/* Contact page */
 
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="tel"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  form textarea {
+    height: 150px;
+  }
+  
+  form button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  
+  /* ========================= */

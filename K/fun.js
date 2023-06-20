@@ -1,3 +1,9 @@
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'hi,te,ur' }, 'translated-text');
+  }
+  
+
 // Add smooth scrolling to all links
 $('a').on('click', function(event) {
 
@@ -36,3 +42,39 @@ $('a').on('click', function(event) {
 }
 
 navSlide();
+
+// =========================
+// contact page
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !email || !phone || !message) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  const data = {
+    name,
+    email,
+    phone,
+    message,
+  };
+
+  console.log(data); // replace with your own code to submit the form
+}
+
+
+
+
+
+
