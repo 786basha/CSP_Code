@@ -1,0 +1,103 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+
+/* ========================================= */
+
+.dropbtn {
+    text-shadow: 0px 0px  15px  wheat;
+      background-color: transparent;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+    
+    /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+    
+    /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+    
+    /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-weight: bold;
+  }
+    
+    /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #f1f1f1;
+      color: black;
+      /* border-radius: 20px; */
+      transition: .5s;
+    
+  }
+    
+    /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+      position: absolute;
+      border-radius: 5px;
+      background-color: rgb(121, 149, 160);
+  }
+  
+  
+  .content {
+    padding: 16px;
+  }
+
+/* ============================================= */
+
+
+
+
+.p{
+    width: 100vw;
+    height: max-content;
+    background-color: lightgrey;
+}
+nav{
+    width: 90vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: auto;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.lef, .rit{
+    margin: auto;
+    border: 1px solid red;
+    width: 480px;
+    height: 450px;
+}
